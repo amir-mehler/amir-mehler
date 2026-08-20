@@ -92,7 +92,6 @@ def card(stats):
         ("kv", "Roots", "Blues · Jazz · Funk"),
         ("kv", "Beats", "Hip-Hop · Electronic · DJs"),
         ("kv", "Heroes", "Hendrix · Zeppelin · Beatles · Bowie · Dylan"),
-        ("kv", "Rotation", "Cream · CCR · King Crimson · Nirvana · White Stripes"),
         ("blank",),
         ("rule", "Contact"),
         ("kv", "LinkedIn", "linkedin.com/in/amirmehler"),
