@@ -36,10 +36,11 @@ RIGHT_COLS = 64  # width of the info column, in characters
 
 # The portrait gets its own, smaller type: same area, ~3x the glyph cells, which
 # is the difference between a legible face and a smudge. 0.6 * size is the
-# advance width of the mono fallbacks (DejaVu, Liberation, Menlo). 11px keeps the
-# 6.6 x 11 cell the art was authored at -- shrink it further and neighbouring
-# shades of the ramp stop being distinguishable.
-ART_FONT_SIZE, ART_LH = 11, 11
+# advance width of the mono fallbacks (DejaVu, Liberation, Menlo). 12px gives a
+# 7.2 x 12 cell, which is the cell the art was authored at -- shrink it and
+# neighbouring shades of the ramp stop being distinguishable. It also happens to
+# make 55 rows of art exactly as tall as the info column.
+ART_FONT_SIZE, ART_LH = 12, 12
 ART_CW = ART_FONT_SIZE * 0.6
 
 THEMES = {
@@ -87,9 +88,11 @@ def card(stats):
         ("kv", "Human", "Hebrew · English"),
         ("blank",),
         ("rule", "Music"),
-        ("kv", "Rock", "Progressive · Psychedelic · Metal"),
+        ("kv", "Rock", "Classic · Psychedelic · Progressive · Grunge · Metal"),
         ("kv", "Roots", "Blues · Jazz · Funk"),
         ("kv", "Beats", "Hip-Hop · Electronic · DJs"),
+        ("kv", "Heroes", "Hendrix · Zeppelin · Beatles · Bowie · Dylan"),
+        ("kv", "Rotation", "Cream · CCR · King Crimson · Nirvana · White Stripes"),
         ("blank",),
         ("rule", "Contact"),
         ("kv", "LinkedIn", "linkedin.com/in/amirmehler"),
