@@ -1,27 +1,15 @@
 {
  "amir-mehler/amir-mehler": {
-  "add": 937,
-  "del": 0,
-  "mine": 1,
-  "total": 2
- },
- "amir-mehler/autumn_leaves": {
-  "add": 0,
-  "del": 0,
-  "mine": 0,
-  "total": 1
+  "add": 1357,
+  "del": 223,
+  "mine": 2,
+  "total": 3
  },
  "amir-mehler/cinder": {
   "add": 0,
   "del": 0,
   "mine": 0,
   "total": 2
- },
- "amir-mehler/configuru": {
-  "add": 48,
-  "del": 0,
-  "mine": 1,
-  "total": 1
  },
  "amir-mehler/epoch": {
   "add": 1690,
