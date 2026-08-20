@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1403px" height="635px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1403px" height="650px" font-size="16px">
 <style>
 @font-face { src: local('Consolas'); font-family: 'ConsolasFallback'; font-display: swap; size-adjust: 109%; }
 .key {fill: #ffa657;} .value {fill: #a5d6ff;}
@@ -8,7 +8,7 @@
 .add {fill: #3fb950;} .del {fill: #f85149;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="1403px" height="635px" fill="#161b22" rx="15"/>
+<rect width="1403px" height="650px" fill="#161b22" rx="15"/>
 <text x="15" y="26" fill="#c9d1d9" xml:space="preserve" font-size="11px">
 <tspan x="15" y="26">...:---  ......   ..   +-**-+++++++++++++++++++++++++++++++++++++++++++++++++=***+++++++++++++++**********======</tspan>
 <tspan x="15" y="37">...:---  ......   ..   @**-++++++++++++++++++++++++++++++++++++++++++++++++===*****++++++++++++++*********======</tspan>
@@ -84,14 +84,19 @@ text, tspan {white-space: pre;}
 <tspan x="774" y="315"><tspan class="dots">. </tspan><tspan class="key">Code</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">Bash · Go · Python · JS</tspan></tspan>
 <tspan x="774" y="335"><tspan class="dots">. </tspan><tspan class="key">Human</tspan>:<tspan class="dots"> ...................................... </tspan><tspan class="value">Hebrew · English</tspan></tspan>
 <tspan x="774" y="355"></tspan>
-<tspan x="774" y="375"><tspan class="key">- Contact </tspan><tspan class="rule">-—————————————————————————————————————————————————————</tspan></tspan>
-<tspan x="774" y="395"><tspan class="dots">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="dots"> ......................... </tspan><tspan class="value">linkedin.com/in/amirmehler</tspan></tspan>
-<tspan x="774" y="415"><tspan class="dots">. </tspan><tspan class="key">Location</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Tel Aviv, Israel</tspan></tspan>
-<tspan x="774" y="435"></tspan>
-<tspan x="774" y="455"><tspan class="key">- GitHub Stats </tspan><tspan class="rule">-————————————————————————————————————————————————</tspan></tspan>
-<tspan x="774" y="475"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> ................... </tspan><tspan class="value">9</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
-<tspan x="774" y="495"><tspan class="dots">. </tspan><tspan class="key">Commits</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">32</tspan> | <tspan class="key">Followers</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">1</tspan></tspan>
-<tspan x="774" y="515"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">11</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,851</tspan></tspan>
-<tspan x="774" y="535"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,812</tspan> ( <tspan class="add">4,465++</tspan>, <tspan class="del">653--</tspan> )</tspan>
+<tspan x="774" y="375"><tspan class="key">- Music </tspan><tspan class="rule">-———————————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="395"><tspan class="dots">. </tspan><tspan class="key">Rock</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">Progressive · Psychedelic · Metal</tspan></tspan>
+<tspan x="774" y="415"><tspan class="dots">. </tspan><tspan class="key">Roots</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Blues · Jazz · Funk</tspan></tspan>
+<tspan x="774" y="435"><tspan class="dots">. </tspan><tspan class="key">Beats</tspan>:<tspan class="dots"> ............................ </tspan><tspan class="value">Hip-Hop · Electronic · DJs</tspan></tspan>
+<tspan x="774" y="455"></tspan>
+<tspan x="774" y="475"><tspan class="key">- Contact </tspan><tspan class="rule">-—————————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="495"><tspan class="dots">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="dots"> ......................... </tspan><tspan class="value">linkedin.com/in/amirmehler</tspan></tspan>
+<tspan x="774" y="515"><tspan class="dots">. </tspan><tspan class="key">Location</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Tel Aviv, Israel</tspan></tspan>
+<tspan x="774" y="535"></tspan>
+<tspan x="774" y="555"><tspan class="key">- GitHub Stats </tspan><tspan class="rule">-————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="575"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">11</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
+<tspan x="774" y="595"><tspan class="dots">. </tspan><tspan class="key">Commits</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">33</tspan> | <tspan class="key">Followers</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">1</tspan></tspan>
+<tspan x="774" y="615"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">17</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,851</tspan></tspan>
+<tspan x="774" y="635"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,860</tspan> ( <tspan class="add">4,513++</tspan>, <tspan class="del">653--</tspan> )</tspan>
 </text>
 </svg>
