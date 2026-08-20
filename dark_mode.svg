@@ -94,9 +94,9 @@ text, tspan {white-space: pre;}
 <tspan x="774" y="515"><tspan class="dots">. </tspan><tspan class="key">Location</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Tel Aviv, Israel</tspan></tspan>
 <tspan x="774" y="535"></tspan>
 <tspan x="774" y="555"><tspan class="key">- GitHub Stats </tspan><tspan class="rule">-————————————————————————————————————————————————</tspan></tspan>
-<tspan x="774" y="575"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">11</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
+<tspan x="774" y="575"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> ................... </tspan><tspan class="value">9</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
 <tspan x="774" y="595"><tspan class="dots">. </tspan><tspan class="key">Commits</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">33</tspan> | <tspan class="key">Followers</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">1</tspan></tspan>
-<tspan x="774" y="615"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">17</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,851</tspan></tspan>
-<tspan x="774" y="635"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,860</tspan> ( <tspan class="add">4,513++</tspan>, <tspan class="del">653--</tspan> )</tspan>
+<tspan x="774" y="615"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">11</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,851</tspan></tspan>
+<tspan x="774" y="635"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,839</tspan> ( <tspan class="add">4,515++</tspan>, <tspan class="del">676--</tspan> )</tspan>
 </text>
 </svg>
