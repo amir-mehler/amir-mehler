@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1146px" height="550px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1403px" height="635px" font-size="16px">
 <style>
 @font-face { src: local('Consolas'); font-family: 'ConsolasFallback'; font-display: swap; size-adjust: 109%; }
 .key {fill: #ffa657;} .value {fill: #a5d6ff;}
@@ -8,81 +8,90 @@
 .add {fill: #3fb950;} .del {fill: #f85149;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="1146px" height="550px" fill="#161b22" rx="15"/>
+<rect width="1403px" height="635px" fill="#161b22" rx="15"/>
 <text x="15" y="26" fill="#c9d1d9" xml:space="preserve" font-size="11px">
-<tspan x="15" y="26">                                      . --.</tspan>
-<tspan x="15" y="37">                                \-----------------/.</tspan>
-<tspan x="15" y="48">                             \\-\-\              -/--/-/</tspan>
-<tspan x="15" y="59">                          \--\\                      -/--//</tspan>
-<tspan x="15" y="70">                       \\\\                              -///</tspan>
-<tspan x="15" y="81">                      \\\.    .  ........      .            ///</tspan>
-<tspan x="15" y="92">                    \\\\   \\-.--------.... .----/......      ///     .</tspan>
-<tspan x="15" y="103">                   \\\. .\\\              ...   .--....///.    ./|  ..</tspan>
-<tspan x="15" y="114">                  \\\ \\\                                 ///.   /|/</tspan>
-<tspan x="15" y="125">                 \\\ \\                                     ///  ./|</tspan>
-<tspan x="15" y="136">                \\\ \\                                       .//  |//.</tspan>
-<tspan x="15" y="147">                |\ \\                                          //  .||</tspan>
-<tspan x="15" y="158">               |\ \\                                            /. .|/</tspan>
-<tspan x="15" y="169">               ||\\                                             .|. |||</tspan>
-<tspan x="15" y="180">              || |                                               || .||</tspan>
-<tspan x="15" y="191">              ||||                                               ||  ||</tspan>
-<tspan x="15" y="202">              ||||                                               .|  ||</tspan>
-<tspan x="15" y="213">              |||.                                                |. .||</tspan>
-<tspan x="15" y="224">             .|.|.                                               .|. ||</tspan>
-<tspan x="15" y="235">              |.||                                               ..  ||</tspan>
-<tspan x="15" y="246">              |.||                                               .   ||</tspan>
-<tspan x="15" y="257">              |||.     ....---.                                 .    ||</tspan>
-<tspan x="15" y="268">              |||.   .\. .-----//            ..-----..          |    ||</tspan>
-<tspan x="15" y="279">           \-.|||   ..--.-.---.  ..           .\-.-/.   ..      |   ||</tspan>
-<tspan x="15" y="290">          |\-//||     \\------///  /.      .  .-------... .     |  .||</tspan>
-<tspan x="15" y="301">          ||  |||     |.\\| --|//. .|     .    \\|----//....    |  .||</tspan>
-<tspan x="15" y="312">          ||  .||     ..  /--\\-/.  |       . \-||/-||/./       | .\|\-/</tspan>
-<tspan x="15" y="323">          ||  .|.                  .             /--\....       |.|\   /|</tspan>
-<tspan x="15" y="334">          ||  ||         ...       .                     .      |||    .|</tspan>
-<tspan x="15" y="345">          ||   .                                                ||     .|</tspan>
-<tspan x="15" y="356">           |.  .                                                ||/    ||</tspan>
-<tspan x="15" y="367">           ||                ..                                 |-\    \</tspan>
-<tspan x="15" y="378">            |                                                   |.    \.</tspan>
-<tspan x="15" y="389">            ||                                                  |..  \\</tspan>
-<tspan x="15" y="400">             |                 ...                              |.  \|</tspan>
-<tspan x="15" y="411">             |                   /.   ...--.                    ..  |</tspan>
-<tspan x="15" y="422">             ||                 . ...                           .  \|</tspan>
-<tspan x="15" y="433">              //                 ..                               .\</tspan>
-<tspan x="15" y="444">               |         .   .--..                             . \\</tspan>
-<tspan x="15" y="455">               |         ///-|\-/-----.....                    \-\</tspan>
-<tspan x="15" y="466">               ||         .///|//|./--/--||-----.             ||</tspan>
-<tspan x="15" y="477">                |                .....-.../--\.               |</tspan>
-<tspan x="15" y="488">                |/                                           ||</tspan>
-<tspan x="15" y="499">                 |                                           |</tspan>
-<tspan x="15" y="510">            ..---\                                          ||</tspan>
-<tspan x="15" y="521">                                                            ||</tspan>
+<tspan x="15" y="26">...:---  ......   ..   +-**-+++++++++++++++++++++++++++++++++++++++++++++++++=***+++++++++++++++**********======</tspan>
+<tspan x="15" y="37">...:---  ......   ..   @**-++++++++++++++++++++++++++++++++++++++++++++++++===*****++++++++++++++*********======</tspan>
+<tspan x="15" y="48">...:---  ......   ..  +@*-+++++++++++++++++++++++++@@+=-  ..-...---*++++=====---*****++++++++++++*********======</tspan>
+<tspan x="15" y="59">...:---  ......   ..  +@*-+++++++++++++++++++++@- -  ..-  ..-........ .-==---:--.--@**+++++++++++++******+++++++</tspan>
+<tspan x="15" y="70">...:---  ......   ..  +@*-+++**************** -----  ..-  ..-........     .:::--  .-@**+++@*****@+++++++++++++++</tspan>
+<tspan x="15" y="81">..::---  .... +++ ..  +@-++****************--------  ..-   --........        .--.-.--@*++@********@++++++******+</tspan>
+<tspan x="15" y="92">..::---  ...+++++ .. ++@-+**************+-. ----... ++++++ ...:::----.          .----@++@**********@++++********</tspan>
+<tspan x="15" y="103">::::--- .---++++++ . +@*-+*************+.    ..--+@************---------::.      ***+++@***********@++**********</tspan>
+<tspan x="15" y="114">::::---.----++++++ . +@*-+************=. . .---@**********************-----:.     *+@***************************</tspan>
+<tspan x="15" y="125">::::--------++++++++++@*-+***********=  :-----********@+++++++********==-----:.  - +@***************************</tspan>
+<tspan x="15" y="136">.:::--------++++++++++@*-+**********=  :-----****++++++++++++++++++***===------.----@***************************</tspan>
+<tspan x="15" y="147">.:::--------++++++++++@*-+**********: :----*****++++++++++++++++++++++====------ -- +@**************************</tspan>
+<tspan x="15" y="158">.:::--------++++++++++@*-+*********=..----*****+++++++++++++++++++++++++===--=-------@**************************</tspan>
+<tspan x="15" y="169">.:::--------++++++++++@*-+*********:.----*******++++++++++++++++++++++++====-=*-- ---@**************************</tspan>
+<tspan x="15" y="180">.:::--------++++++++++@*-+********+:.----*******+++++++++++++++++++++++++=====*-- -- ********************++***++</tspan>
+<tspan x="15" y="191">..::--------+++++++++@**-+********+..----*****+++++++++++++++++++++++++++=====*-----:***********@+++-+++++++++++</tspan>
+<tspan x="15" y="202">..::--------+++++++++@**-+********+..:---****+++++++++++++++++++++++++++======*-- ---@*********@++*- :  -*==++++</tspan>
+<tspan x="15" y="213">..::--------+++++++++@*@++********+..---=***+++++++++++++++++++++++++++++=====---   ***********@+@ ::-- --==++++</tspan>
+<tspan x="15" y="224">..::--------+++++++++@*@++*********..---=*-------@***@++++++++++++++++++++====--.   +@*********@+*@----***===+++</tspan>
+<tspan x="15" y="235">.:::--------+++++++++@*@++*********:.---:-.   --- . @**@++++**- :   ----=====---  --+@*********@++++++++++++++==</tspan>
+<tspan x="15" y="246">.:::--------+++++++++@*@++*****+--+=:------- ...--    @@++++@+----------::-=----   :*************************+++</tspan>
+<tspan x="15" y="257">.:::--------+++@@++++@*@++******---::-=---. *-    + + *@++@@++ : - ...:-=-----*-   ***************************++</tspan>
+<tspan x="15" y="268">.:::--------+++@@++++@*@++******---:--==---------@@+++@******@--** .--=:.--===*-  .*****************************</tspan>
+<tspan x="15" y="279">.:::--------+++@*@+++@*@++******---.--===**------+++++@*******-----***---=====*--*****+@************************</tspan>
+<tspan x="15" y="290">.:::--------++@**@+++@*@++******---:--===*********@++@****************========*--*****+@************************</tspan>
+<tspan x="15" y="301">.:::--------++@***@++@*@++******+-----===*********@++@****************=+======--.*******************************</tspan>
+<tspan x="15" y="312">::::--------++@***@++@*@++*******=----===******=-+++@@++@*@@**-+++++++++++===---**+@*+@*************************</tspan>
+<tspan x="15" y="323">::::--------++@***@++@*@++*******=----===*****---++@*@+++@***@---+++++++++===---+***+@**************************</tspan>
+<tspan x="15" y="334">::::--------++@***@++@*@++********-----==*****----. @****@@********+++++++==----********************************</tspan>
+<tspan x="15" y="345">::::--------+@*****@+@*@++********=---===*****----.. +++++  @*******+++++===---*********************************</tspan>
+<tspan x="15" y="356">::::--------++@****@+@*@+++*******+---===****----+++++++@@@**********+++====---***+@****************************</tspan>
+<tspan x="15" y="367">::::--------+@*****@+@*@+++*********---==***----@********************++=====---**+@***************************++</tspan>
+<tspan x="15" y="378">.:::--------++@****@+@*@+++*********----=***- - : ++++++@***********+++=====--*+******************************++</tspan>
+<tspan x="15" y="389">.:::--------++@****@+@*@+++*********=-=-=*****--. +@++++++@@ -.:-***+++=====--********************************++</tspan>
+<tspan x="15" y="400">.:::--------++@****@+@*@+++*********+---=********=@************-++*++*======-=********************************++</tspan>
+<tspan x="15" y="411">.:::--------++@****@+@**-++++++++****+---*******=++@*********-++++*++*=====--*********************************++</tspan>
+<tspan x="15" y="422">.:::--------++@***@++@**-++++++**====-----***********@@***@++++++++***===---=*******************************++++</tspan>
+<tspan x="15" y="433">.:::--------+++@**@++@**-++++**--::::::-----*************+++++++******==----=*****************************++++++</tspan>
+<tspan x="15" y="444">..::--------++++++++++@**-++***--....::-------*=@**++@******@+********---=-=-*******************@++++++++*=====+</tspan>
+<tspan x="15" y="455">..::--------++++++++++@********--.. ..:-----.---@**+++++************---=====--*++++++++++++++****+ :::   -::--==</tspan>
+<tspan x="15" y="466">..::--------+++++++++++@*******--:....:-------..-+@**********@------**======-:--*+**********@++ ..-------..::--=</tspan>
+<tspan x="15" y="477">..::--------+++++++++++@*******--::...:--------.....  +++++  +----****======-: -****=+++++++ .  ==---...-...::--</tspan>
+<tspan x="15" y="488">..::--------++++++++++++-******--::::::----------...  ++++  ++-*******======---++*----...  ..: ===-------....::-</tspan>
+<tspan x="15" y="499">..::--------++++++++++++-*****---:::-==----------+++++++++@********+++=+====-=+++++--.     ..- ===-------.....:-</tspan>
+<tspan x="15" y="510">..::--------++++++++++++-***-----::-==---------@****************-+++++++=====+++++++-*     ==- ===-------.....::</tspan>
+<tspan x="15" y="521">..::--------+++++++++++++-*-----*=====----------@**************-++++++++===++++++++++++    ==- ===-------.....::</tspan>
+<tspan x="15" y="532">..::--------+++++++++++++---*****==+==-----------@***********-+++++++++==+++*****+++++-*   ==- ===----   -::..::</tspan>
+<tspan x="15" y="543">..::--------+++++++++++@*********=++++---------@***********@++++++++++==++****++++++++++@@+++  ....::: ---:::..:</tspan>
+<tspan x="15" y="554">.:::--------@************-+******=++++=-=------@***********@+++++++++*=++++++++++**+@+++++++@++ ...:: -----::..:</tspan>
+<tspan x="15" y="565">::::-----*****+++++++@@++++*****++++++===***---@************@+++++***++++++++++*+++@++++++++++@ ...::------::..:</tspan>
+<tspan x="15" y="576">::::---****+++++++++@@++++++++*+++++++===*****-@************@+*****++++++++++**+++@+++++++++++++ ..:: ----::...:</tspan>
+<tspan x="15" y="587">::::-*++++++++++++++++++*-+++** ++++++===******************@+***-++++++++++***++++@+++++++++++++++ :: ----::...:</tspan>
+<tspan x="15" y="598">::-=+++++++++++++++++++++*---   *+=+++===**********************-+++*++++***++++*+*++++++++++++++++++ :   -:....:</tspan>
+<tspan x="15" y="609">-=++++++++++++++++++++++-+++***--=++++===*********************-++++*****++++**+++*+++++++++++++++++++------::::-</tspan>
+<tspan x="15" y="620">++++++++++++++++++++++++++++++**--=+++===**++**+-****@+******-+++++**+++++++++++*++++++++++++++++++++++*--------</tspan>
 </text>
-<text x="517" y="35" fill="#c9d1d9" xml:space="preserve">
-<tspan x="517" y="35"><tspan class="hd">amir@mehler</tspan><tspan class="rule">-————————————————————————————————————————————————————</tspan></tspan>
-<tspan x="517" y="55"><tspan class="dots">. </tspan><tspan class="key">OS</tspan>:<tspan class="dots"> ............................... </tspan><tspan class="value">macOS · Linux · Kubernetes</tspan></tspan>
-<tspan x="517" y="75"><tspan class="dots">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="dots"> .......................... </tspan><tspan class="value">20 years, 7 months, 19 days</tspan></tspan>
-<tspan x="517" y="95"><tspan class="dots">. </tspan><tspan class="key">Host</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">PhaseV — Head of DevOps</tspan></tspan>
-<tspan x="517" y="115"><tspan class="dots">. </tspan><tspan class="key">Experience</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">+15 years as SRE / DevOps manager</tspan></tspan>
-<tspan x="517" y="135"><tspan class="dots">. </tspan><tspan class="key">Shell</tspan>:<tspan class="dots"> ..................................... </tspan><tspan class="value">zsh + Claude Code</tspan></tspan>
-<tspan x="517" y="155"><tspan class="dots">. </tspan><tspan class="key">Editor</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">VIM · Cursor · Claude</tspan></tspan>
-<tspan x="517" y="175"></tspan>
-<tspan x="517" y="195"><tspan class="key">- Stack </tspan><tspan class="rule">-———————————————————————————————————————————————————————</tspan></tspan>
-<tspan x="517" y="215"><tspan class="dots">. </tspan><tspan class="key">Infra as Code</tspan>:<tspan class="dots"> ..................... </tspan><tspan class="value">Terraform · Helm · ArgoCD</tspan></tspan>
-<tspan x="517" y="235"><tspan class="dots">. </tspan><tspan class="key">Cloud</tspan>:<tspan class="dots"> ..................................... </tspan><tspan class="value">AWS · GCP · Azure</tspan></tspan>
-<tspan x="517" y="255"><tspan class="dots">. </tspan><tspan class="key">Observability</tspan>:<tspan class="dots"> ........................................... </tspan><tspan class="value">FTW</tspan></tspan>
-<tspan x="517" y="275"></tspan>
-<tspan x="517" y="295"><tspan class="key">- Languages </tspan><tspan class="rule">-———————————————————————————————————————————————————</tspan></tspan>
-<tspan x="517" y="315"><tspan class="dots">. </tspan><tspan class="key">Code</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">Bash · Go · Python · JS</tspan></tspan>
-<tspan x="517" y="335"><tspan class="dots">. </tspan><tspan class="key">Human</tspan>:<tspan class="dots"> ...................................... </tspan><tspan class="value">Hebrew · English</tspan></tspan>
-<tspan x="517" y="355"></tspan>
-<tspan x="517" y="375"><tspan class="key">- Contact </tspan><tspan class="rule">-—————————————————————————————————————————————————————</tspan></tspan>
-<tspan x="517" y="395"><tspan class="dots">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="dots"> ......................... </tspan><tspan class="value">linkedin.com/in/amirmehler</tspan></tspan>
-<tspan x="517" y="415"><tspan class="dots">. </tspan><tspan class="key">Location</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Tel Aviv, Israel</tspan></tspan>
-<tspan x="517" y="435"></tspan>
-<tspan x="517" y="455"><tspan class="key">- GitHub Stats </tspan><tspan class="rule">-————————————————————————————————————————————————</tspan></tspan>
-<tspan x="517" y="475"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> ................... </tspan><tspan class="value">9</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
-<tspan x="517" y="495"><tspan class="dots">. </tspan><tspan class="key">Commits</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">31</tspan> | <tspan class="key">Followers</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">1</tspan></tspan>
-<tspan x="517" y="515"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">11</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,849</tspan></tspan>
-<tspan x="517" y="535"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,615</tspan> ( <tspan class="add">4,045++</tspan>, <tspan class="del">430--</tspan> )</tspan>
+<text x="774" y="35" fill="#c9d1d9" xml:space="preserve">
+<tspan x="774" y="35"><tspan class="hd">amir@mehler.co.il</tspan><tspan class="rule">-——————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="55"><tspan class="dots">. </tspan><tspan class="key">OS</tspan>:<tspan class="dots"> ............................... </tspan><tspan class="value">macOS · Linux · Kubernetes</tspan></tspan>
+<tspan x="774" y="75"><tspan class="dots">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="dots"> .......................... </tspan><tspan class="value">20 years, 7 months, 19 days</tspan></tspan>
+<tspan x="774" y="95"><tspan class="dots">. </tspan><tspan class="key">Host</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">PhaseV — Head of DevOps</tspan></tspan>
+<tspan x="774" y="115"><tspan class="dots">. </tspan><tspan class="key">Experience</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">+15 years as SRE / DevOps manager</tspan></tspan>
+<tspan x="774" y="135"><tspan class="dots">. </tspan><tspan class="key">Shell</tspan>:<tspan class="dots"> ..................................... </tspan><tspan class="value">zsh + Claude Code</tspan></tspan>
+<tspan x="774" y="155"><tspan class="dots">. </tspan><tspan class="key">Editor</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">VIM · Cursor · Claude</tspan></tspan>
+<tspan x="774" y="175"></tspan>
+<tspan x="774" y="195"><tspan class="key">- Stack </tspan><tspan class="rule">-———————————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="215"><tspan class="dots">. </tspan><tspan class="key">Infra as Code</tspan>:<tspan class="dots"> ..................... </tspan><tspan class="value">Terraform · Helm · ArgoCD</tspan></tspan>
+<tspan x="774" y="235"><tspan class="dots">. </tspan><tspan class="key">Cloud</tspan>:<tspan class="dots"> ..................................... </tspan><tspan class="value">AWS · GCP · Azure</tspan></tspan>
+<tspan x="774" y="255"><tspan class="dots">. </tspan><tspan class="key">Observability</tspan>:<tspan class="dots"> ........................................... </tspan><tspan class="value">FTW</tspan></tspan>
+<tspan x="774" y="275"></tspan>
+<tspan x="774" y="295"><tspan class="key">- Languages </tspan><tspan class="rule">-———————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="315"><tspan class="dots">. </tspan><tspan class="key">Code</tspan>:<tspan class="dots"> ................................ </tspan><tspan class="value">Bash · Go · Python · JS</tspan></tspan>
+<tspan x="774" y="335"><tspan class="dots">. </tspan><tspan class="key">Human</tspan>:<tspan class="dots"> ...................................... </tspan><tspan class="value">Hebrew · English</tspan></tspan>
+<tspan x="774" y="355"></tspan>
+<tspan x="774" y="375"><tspan class="key">- Contact </tspan><tspan class="rule">-—————————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="395"><tspan class="dots">. </tspan><tspan class="key">LinkedIn</tspan>:<tspan class="dots"> ......................... </tspan><tspan class="value">linkedin.com/in/amirmehler</tspan></tspan>
+<tspan x="774" y="415"><tspan class="dots">. </tspan><tspan class="key">Location</tspan>:<tspan class="dots"> ................................... </tspan><tspan class="value">Tel Aviv, Israel</tspan></tspan>
+<tspan x="774" y="435"></tspan>
+<tspan x="774" y="455"><tspan class="key">- GitHub Stats </tspan><tspan class="rule">-————————————————————————————————————————————————</tspan></tspan>
+<tspan x="774" y="475"><tspan class="dots">. </tspan><tspan class="key">Repos</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">11</tspan> | <tspan class="key">Stars</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">2</tspan></tspan>
+<tspan x="774" y="495"><tspan class="dots">. </tspan><tspan class="key">Commits</tspan>:<tspan class="dots"> ................ </tspan><tspan class="value">32</tspan> | <tspan class="key">Followers</tspan>:<tspan class="dots"> .................. </tspan><tspan class="value">1</tspan></tspan>
+<tspan x="774" y="515"><tspan class="dots">. </tspan><tspan class="key">Contributed to</tspan>:<tspan class="dots"> ......... </tspan><tspan class="value">17</tspan> | <tspan class="key">Last 12mo</tspan>:<tspan class="dots"> .............. </tspan><tspan class="value">2,850</tspan></tspan>
+<tspan x="774" y="535"><tspan class="dots">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="dots"> ...................... </tspan><tspan class="value">3,663</tspan> ( <tspan class="add">4,093++</tspan>, <tspan class="del">430--</tspan> )</tspan>
 </text>
 </svg>

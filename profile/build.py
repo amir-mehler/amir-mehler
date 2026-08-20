@@ -36,16 +36,22 @@ RIGHT_COLS = 64  # width of the info column, in characters
 
 # The portrait gets its own, smaller type: same area, ~3x the glyph cells, which
 # is the difference between a legible face and a smudge. 0.6 * size is the
-# advance width of the mono fallbacks (DejaVu, Liberation, Menlo).
+# advance width of the mono fallbacks (DejaVu, Liberation, Menlo). 11px keeps the
+# 6.6 x 11 cell the art was authored at -- shrink it further and neighbouring
+# shades of the ramp stop being distinguishable.
 ART_FONT_SIZE, ART_LH = 11, 11
 ART_CW = ART_FONT_SIZE * 0.6
 
 THEMES = {
     "dark_mode.svg": {
+        # Glyph density reads as glow on a dark background, so the dark card gets
+        # the inverted portrait -- see profile/README.md.
+        "portrait": "profile/portrait_dark.txt",
         "bg": "#161b22", "fg": "#c9d1d9", "key": "#ffa657", "value": "#a5d6ff",
         "dots": "#4d5866", "add": "#3fb950", "del": "#f85149", "rule": "#8b949e",
     },
     "light_mode.svg": {
+        "portrait": "profile/portrait.txt",
         "bg": "#ffffff", "fg": "#24292f", "key": "#953800", "value": "#0550ae",
         "dots": "#afb8c1", "add": "#1a7f37", "del": "#cf222e", "rule": "#57606a",
     },
@@ -63,7 +69,7 @@ def card(stats):
     ('blank',)
     """
     return [
-        ("head", f"{USER.split('-')[0]}@mehler"),
+        ("head", "amir@mehler.co.il"),
         ("kv", "OS", "macOS · Linux · Kubernetes"),
         ("kv", "Uptime", stats["uptime"]),
         ("kv", "Host", "PhaseV — Head of DevOps"),
@@ -377,11 +383,10 @@ def main():
         "loc_del": comma(loc_del),
     }
 
-    with open("profile/portrait.txt") as f:
-        portrait = [line.rstrip("\n") for line in f]
     rows = card(stats)
-    for theme_file in THEMES:
-        render(theme_file, portrait, rows)
+    for theme_file, theme in THEMES.items():
+        with open(theme["portrait"]) as f:
+            render(theme_file, [line.rstrip("\n") for line in f], rows)
 
 
 if __name__ == "__main__":

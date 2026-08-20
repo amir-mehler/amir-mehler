@@ -7,20 +7,25 @@ Turn a photo into the ASCII portrait used by the profile card.
 Writes profile/portrait.txt (which build.py renders into both SVGs) and prints a
 preview.
 
-It draws *lines*, not shading: per glyph cell, the dominant edge direction
-becomes one of - / | \\ , and cells with no edge stay blank. Density-based ASCII
-art can't work here -- glyph density reads as darkness on the light card and as
-glow on the dark one, so the same grid would look like a face on one and a
-hollow mask on the other. An outline reads the same on both.
+Two modes, because the two kinds of source want different treatment:
 
-Flat studio lighting also gives a density ramp almost nothing to work with,
-while edges survive it.
+  line     (default) per glyph cell, the dominant edge direction becomes one of
+           - / | \\ and featureless cells stay blank. An outline reads the same
+           on a dark and a light card, and survives flat studio lighting, which
+           gives a density ramp almost nothing to work with.
+
+  recover  the source is a *screenshot of ASCII art*: read the glyphs back out of
+           it by matching every cell of its character grid against rendered
+           templates. Faithful to the original art, where re-deriving tone from
+           the screenshot only smears it. Density reads as darkness on the light
+           card and as glow on the dark one, so this mode needs a second
+           --invert pass to produce the dark variant.
 """
 import argparse
 import math
 import sys
 
-from PIL import Image, ImageDraw, ImageFilter, ImageOps
+from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 # The portrait is drawn at font-size 11 with a matching 11px line-height, so a
 # glyph cell is ~6.6 x 11 px. Keep in step with ART_* in build.py.
@@ -101,6 +106,69 @@ def glyph(angle):
     return "/"
 
 
+# sparse -> dense. The ramp the generators that produced the source art use, and
+# the alphabet --mode recover is allowed to answer with.
+RAMP = " .:-=+*#%@"
+FONT = "/System/Library/Fonts/Menlo.ttc"
+
+
+def recover(path, width, lines, font_path, invert):
+    """Read the glyphs back out of a screenshot of ASCII art.
+
+    The screenshot's font, size and grid origin are unknown, so sweep them: score
+    each candidate by how well the whole ramp explains a sample of cells, then
+    decode every cell with the winner. Confusing two neighbours on the ramp costs
+    one shade, so a near-miss on the font is harmless.
+    """
+    img = Image.open(path).convert("L")
+    w, h = img.size
+    cw, ch = w / width, h / lines
+    tile = (int(round(cw)), int(round(ch)))
+
+    def templates(size, dy):
+        font = ImageFont.truetype(font_path, size)
+        out = {}
+        for ch_ in RAMP:
+            im = Image.new("L", tile, 255)
+            ImageDraw.Draw(im).text((0, dy), ch_, font=font, fill=0)
+            out[ch_] = list(im.getdata())
+        return out
+
+    def cell(cx, cy, ox, oy):
+        x0, y0 = int(round(cx * cw)) + ox, int(round(cy * ch)) + oy
+        return list(img.crop((x0, y0, x0 + tile[0], y0 + tile[1])).getdata())
+
+    def ssd(a, b):
+        return sum((p - q) ** 2 for p, q in zip(a, b))
+
+    sample = [(cx, cy) for cy in range(2, lines, 7) for cx in range(2, width, 9)]
+    best = None
+    for size in range(9, 17):
+        for dy in range(-4, 3):
+            tpl = templates(size, dy)
+            for ox in (-1, 0, 1):
+                for oy in (-1, 0, 1):
+                    err = sum(min(ssd(cell(cx, cy, ox, oy), t) for t in tpl.values())
+                              for cx, cy in sample)
+                    if best is None or err < best[0]:
+                        best = (err, size, dy, ox, oy)
+    _, size, dy, ox, oy = best
+    print(f"grid {width}x{lines}, cell {cw:.2f}x{ch:.2f}, "
+          f"font size {size} dy {dy}, origin ({ox},{oy})", file=sys.stderr)
+
+    tpl = templates(size, dy)
+    flip = {a: b for a, b in zip(RAMP, reversed(RAMP))}
+    rows = []
+    for cy in range(lines):
+        row = []
+        for cx in range(width):
+            c = cell(cx, cy, ox, oy)
+            g = min(tpl, key=lambda ch_: ssd(c, tpl[ch_]))
+            row.append(flip[g] if invert else g)
+        rows.append("".join(row).rstrip() if not invert else "".join(row))
+    return rows
+
+
 def to_ascii(path, width, lines, crop, focus, low, high, blur, weak):
     img = Image.open(path).convert("L")
     if crop:
@@ -132,8 +200,12 @@ def to_ascii(path, width, lines, crop, focus, low, high, blur, weak):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("image")
+    ap.add_argument("--mode", choices=("line", "recover"), default="line")
     ap.add_argument("--width", type=int, default=76, help="portrait width in characters")
     ap.add_argument("--lines", type=int, default=47, help="portrait height in lines")
+    ap.add_argument("--invert", action="store_true",
+                    help="recover mode: flip the ramp, for the dark card")
+    ap.add_argument("--font", default=FONT, help="recover mode: font to match the art against")
     ap.add_argument("--crop", help='explicit source crop "x,y,w,h", applied before anything else')
     ap.add_argument("--focus", type=float, default=0.05, help="vertical crop bias, 0=top 1=bottom")
     ap.add_argument("--low", type=float, default=22.0, help="edges weaker than this are blank")
@@ -143,8 +215,11 @@ def main():
     ap.add_argument("--out", default="profile/portrait.txt")
     args = ap.parse_args()
 
-    rows = to_ascii(args.image, args.width, args.lines, args.crop, args.focus,
-                    args.low, args.high, args.blur, args.weak)
+    if args.mode == "recover":
+        rows = recover(args.image, args.width, args.lines, args.font, args.invert)
+    else:
+        rows = to_ascii(args.image, args.width, args.lines, args.crop, args.focus,
+                        args.low, args.high, args.blur, args.weak)
     with open(args.out, "w") as f:
         f.write("\n".join(rows) + "\n")
     print("\n".join(rows))
